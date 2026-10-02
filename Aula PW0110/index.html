@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Multifunções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculator">
+        <header class="topbar">
+            <div class="menu-icon"><span></span><span></span><span></span></div>
+            <div class="title">Calculadora</div>
+          </header>
+
+    <input type="text" id="display" placeholder="0" readonly>
+    
+    <div class="botoes">
+        <!-- Funções de Controle e Geometria -->
+      
+        <button class="geometria" onclick="calcularAreaQuadrado()">Área 🟩</button>
+        <button class="geometria" onclick="calcularAreaTriangulo()">Área 🔺</button>
+        <button class="geometria" onclick="calcularAreaRetangulo()">Área █</button><br><br>
+
+        <button class="limpar" onclick="limparTela()">C</button>
+
+        <button onclick="adicionarValor('7')">7</button>
+        <button onclick="adicionarValor('8')">8</button>
+        <button onclick="adicionarValor('9')">9</button>
+        <button onclick="adicionarValor('/')" class="operador">/</button><br>
+       
+
+        <!-- Linha 2 de Números e Operadores -->
+        <button onclick="adicionarValor('4')">4</button>
+        <button onclick="adicionarValor('5')">5</button>
+        <button onclick="adicionarValor('6')">6</button>
+        <button onclick="adicionarValor('*')" class="operador">*</button><br>
+  
+
+        <!-- Linha 3 de Números e Operadores -->
+        <button onclick="adicionarValor('0')">0</button>
+        <button onclick="adicionarValor('1')">1</button>
+        <button onclick="adicionarValor('2')">2</button>
+        <button onclick="adicionarValor('3')">3</button>
+        <button onclick="adicionarValor('-')" class="operador">-</button><br>
+
+ 
+        <button onclick="adicionarValor('+')" class="operador">+</button>
+
+ 
+
+        <!-- Linha 4 de Números e Operadores -->
+        <button onclick="calcularResultado()" class="igual" style="grid-column: span 4;">=</button>
+        <button onclick="adicionarValor('.')">.</button>
+        <button onclick="adicionarValor('+/-')">+/-</button>
+        <button onclick="apagarUltimo()" class="operador">DEL</button>
+
+          
+    </div>
+</div></center>
+
+<script src="js/script.js"></script>
+</body>
+</html>

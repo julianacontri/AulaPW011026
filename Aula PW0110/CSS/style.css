@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    width: 320px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #c6c6c6;
+}
+
+button.operador {
+    background-color: #ff9500;
+    color: white;
+}
+
+button.operador:hover {
+    background-color: #e08500;
+}
+
+button.limpar {
+    background-color: #ff3b30;
+    color: white;
+}
+
+button.limpar:hover {
+    background-color: #d32f2f;
+}
+
+button.geometria {
+    background-color: #007aff;
+    color: white;
+    font-size: 13px;
+}
+
+button.geometria:hover {
+    background-color: #0062cc;
+}
+
+button.igual {
+    background-color: #34c759;
+    color: white;
+    font-size: 20px;
+}
+
+button.igual:hover {
+    background-color: #28a745;
+}
+
